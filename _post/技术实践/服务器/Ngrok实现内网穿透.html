@@ -13,16 +13,16 @@
 <meta name="keywords" content="Ngrok,ubuntu,内网穿透,远程桌面">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Ngrok 内网穿透 和 远程桌面">
-<meta property="og:url" content="https://blog.lovife.cn/Wiki.site/_post/技术实践/服务器/Ngrok实现内网穿透.html">
+<meta property="og:url" content="https://wiki.lovife.cn/_post/技术实践/服务器/Ngrok实现内网穿透.html">
 <meta property="og:site_name" content="lovife&#39;s Wiki">
 <meta property="og:description" content="尝试用 iPad 远程控制寝室的 PC，但是寝室网络并没有提供 公网IP，所以需要自己实现内网穿透，在网上发现一篇技术博客，使用 Ngrok 实现。于是跟着实践了一下，下面是成功远程桌面截图 和 ngrok 的搭建过程。    ./Ngrok实现内网穿透/ngrok.html">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://blog.lovife.cn/Wiki.site/_post/技术实践/服务器/IMG_0604_2018-04-01_10-08-43.JPG">
+<meta property="og:image" content="https://wiki.lovife.cn/_post/技术实践/服务器/IMG_0604_2018-04-01_10-08-43.JPG">
 <meta property="og:updated_time" content="2018-04-04T09:27:08.467Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Ngrok 内网穿透 和 远程桌面">
 <meta name="twitter:description" content="尝试用 iPad 远程控制寝室的 PC，但是寝室网络并没有提供 公网IP，所以需要自己实现内网穿透，在网上发现一篇技术博客，使用 Ngrok 实现。于是跟着实践了一下，下面是成功远程桌面截图 和 ngrok 的搭建过程。    ./Ngrok实现内网穿透/ngrok.html">
-<meta name="twitter:image" content="https://blog.lovife.cn/Wiki.site/_post/技术实践/服务器/IMG_0604_2018-04-01_10-08-43.JPG">
+<meta name="twitter:image" content="https://wiki.lovife.cn/_post/技术实践/服务器/IMG_0604_2018-04-01_10-08-43.JPG">
     
 
     
@@ -30,22 +30,22 @@
     
 
     
-        <link rel="icon" href="/Wiki.site/favicon.ico">
+        <link rel="icon" href="/favicon.ico">
     
 
-    <link rel="stylesheet" href="/Wiki.site/libs/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/Wiki.site/libs/open-sans/styles.css">
-    <link rel="stylesheet" href="/Wiki.site/libs/source-code-pro/styles.css">
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
 
-    <link rel="stylesheet" href="/Wiki.site/css/style.css">
-    <script src="/Wiki.site/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script src="/Wiki.site/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
     
     
-        <link rel="stylesheet" href="/Wiki.site/libs/lightgallery/css/lightgallery.min.css">
+        <link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
     
     
-        <link rel="stylesheet" href="/Wiki.site/libs/justified-gallery/justifiedGallery.min.css">
+        <link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
     
     
     
@@ -62,21 +62,21 @@
         <header id="header">
     <div id="header-main" class="header-inner">
         <div class="outer">
-            <a href="/Wiki.site/" id="logo">
+            <a href="/" id="logo">
                 <i class="logo"></i>
                 <span class="site-title">lovife&#39;s Wiki</span>
             </a>
             <nav id="main-nav">
                 
-                    <a class="main-nav-link" href="/Wiki.site/">首页</a>
+                    <a class="main-nav-link" href="/">首页</a>
                 
-                    <a class="main-nav-link" href="/Wiki.site/archives">归档</a>
+                    <a class="main-nav-link" href="/archives">归档</a>
                 
-                    <a class="main-nav-link" href="/Wiki.site/categories">分类</a>
+                    <a class="main-nav-link" href="/categories">分类</a>
                 
-                    <a class="main-nav-link" href="/Wiki.site/tags">标签</a>
+                    <a class="main-nav-link" href="/tags">标签</a>
                 
-                    <a class="main-nav-link" href="/Wiki.site/about">关于</a>
+                    <a class="main-nav-link" href="/about">关于</a>
                 
             </nav>
             
@@ -108,13 +108,13 @@
             TAGS: 'insight.tags',
             UNTITLED: 'insight.untitled',
         },
-        ROOT_URL: '/Wiki.site/',
-        CONTENT_URL: '/Wiki.site/content.json',
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
-<script src="/Wiki.site/js/insight.js"></script>
+<script src="/js/insight.js"></script>
 
 </div>
         </div>
@@ -123,15 +123,15 @@
         <table class="menu outer">
             <tr>
                 
-                    <td><a class="main-nav-link" href="/Wiki.site/">首页</a></td>
+                    <td><a class="main-nav-link" href="/">首页</a></td>
                 
-                    <td><a class="main-nav-link" href="/Wiki.site/archives">归档</a></td>
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
                 
-                    <td><a class="main-nav-link" href="/Wiki.site/categories">分类</a></td>
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
                 
-                    <td><a class="main-nav-link" href="/Wiki.site/tags">标签</a></td>
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
                 
-                    <td><a class="main-nav-link" href="/Wiki.site/about">关于</a></td>
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
                 
                 <td>
                     
@@ -183,13 +183,13 @@
                             &nbsp;
                             Ngrok实现内网穿透
                         </a>
-                         <ul class="unstyled" id="tree">  <li class="file"><a href="/Wiki.site/_post/技术实践/服务器/Ngrok实现内网穿透/ngrok.html">Ngrok</a></li>  </ul> 
+                         <ul class="unstyled" id="tree">  <li class="file"><a href="/_post/技术实践/服务器/Ngrok实现内网穿透/ngrok.html">Ngrok</a></li>  </ul> 
                     </li> 
-                     <li class="file active"><a href="/Wiki.site/_post/技术实践/服务器/Ngrok实现内网穿透.html">Ngrok 内网穿透 和 远程桌面</a></li>  </ul> 
+                     <li class="file active"><a href="/_post/技术实践/服务器/Ngrok实现内网穿透.html">Ngrok 内网穿透 和 远程桌面</a></li>  </ul> 
                     </li> 
                      </ul> 
                     </li> 
-                     <li class="file"><a href="/Wiki.site/_post/index.html">welcome lovife's Wiki Site</a></li>  </ul> 
+                     <li class="file"><a href="/_post/index.html">welcome lovife's Wiki Site</a></li>  </ul> 
     </div>
     <script>
         $(document).ready(function() {
@@ -270,19 +270,19 @@
                         
     <div class="article-category">
     	<i class="fa fa-folder"></i>
-        <a class="article-category-link" href="/Wiki.site/categories/技术实践/">技术实践</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/Wiki.site/categories/技术实践/服务器/">服务器</a>
+        <a class="article-category-link" href="/categories/技术实践/">技术实践</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/技术实践/服务器/">服务器</a>
     </div>
 
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/Wiki.site/tags/Ngrok/">Ngrok</a>, <a class="tag-link" href="/Wiki.site/tags/ubuntu/">ubuntu</a>, <a class="tag-link" href="/Wiki.site/tags/内网穿透/">内网穿透</a>, <a class="tag-link" href="/Wiki.site/tags/远程桌面/">远程桌面</a>
+        <a class="tag-link" href="/tags/Ngrok/">Ngrok</a>, <a class="tag-link" href="/tags/ubuntu/">ubuntu</a>, <a class="tag-link" href="/tags/内网穿透/">内网穿透</a>, <a class="tag-link" href="/tags/远程桌面/">远程桌面</a>
     </div>
 
                         
     <div class="article-date">
         <i class="fa fa-calendar"></i>
-        <a href="/Wiki.site/_post/技术实践/服务器/Ngrok实现内网穿透.html">
+        <a href="/_post/技术实践/服务器/Ngrok实现内网穿透.html">
             <time datetime="2018-04-01T00:00:00.000Z" itemprop="datePublished">2018-04-01</time>
         </a>
     </div>
@@ -333,7 +333,7 @@
 
 
 <div class="figure">
-<p><img src="/Wiki.site/_post/技术实践/服务器/IMG_0604_2018-04-01_10-08-43.JPG" alt="IMG_0604_2018-04-01_10-08-43.JPG">
+<p><img src="/_post/技术实践/服务器/IMG_0604_2018-04-01_10-08-43.JPG" alt="IMG_0604_2018-04-01_10-08-43.JPG">
 </p>
 </div>
 
@@ -663,7 +663,7 @@ Render by <a href="http://www.gnu.org/software/emacs/" rel="external nofollow no
     
 <nav id="article-nav">
     
-        <a href="/Wiki.site/_post/index.html" id="article-nav-newer" class="article-nav-link-wrap">
+        <a href="/_post/index.html" id="article-nav-newer" class="article-nav-link-wrap">
             <strong class="article-nav-caption">nav.newer</strong>
             <div class="article-nav-title">
                 
@@ -710,18 +710,18 @@ Render by <a href="http://www.gnu.org/software/emacs/" rel="external nofollow no
         
 
     
-        <script src="/Wiki.site/libs/lightgallery/js/lightgallery.min.js"></script>
-        <script src="/Wiki.site/libs/lightgallery/js/lg-thumbnail.min.js"></script>
-        <script src="/Wiki.site/libs/lightgallery/js/lg-pager.min.js"></script>
-        <script src="/Wiki.site/libs/lightgallery/js/lg-autoplay.min.js"></script>
-        <script src="/Wiki.site/libs/lightgallery/js/lg-fullscreen.min.js"></script>
-        <script src="/Wiki.site/libs/lightgallery/js/lg-zoom.min.js"></script>
-        <script src="/Wiki.site/libs/lightgallery/js/lg-hash.min.js"></script>
-        <script src="/Wiki.site/libs/lightgallery/js/lg-share.min.js"></script>
-        <script src="/Wiki.site/libs/lightgallery/js/lg-video.min.js"></script>
+        <script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-share.min.js"></script>
+        <script src="/libs/lightgallery/js/lg-video.min.js"></script>
     
     
-        <script src="/Wiki.site/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+        <script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
     
     
         <script type="text/x-mathjax-config">
@@ -749,7 +749,7 @@ Render by <a href="http://www.gnu.org/software/emacs/" rel="external nofollow no
 
 
 <!-- Custom Scripts -->
-<script src="/Wiki.site/js/main.js"></script>
+<script src="/js/main.js"></script>
 
     </div>
 </body>
