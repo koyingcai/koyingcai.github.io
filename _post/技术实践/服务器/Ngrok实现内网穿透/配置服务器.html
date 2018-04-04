@@ -9,18 +9,18 @@
         <meta name="keywords" content="ngrok,skill">
     
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <meta name="description" content="在运营商网络没有分配 公网IP ，可以用在自己的服务器上用 Ngrok 实现内网穿透     需要   有 公网IP 的 VPS  自由解析的 域名       解析域名   把域名 mydomain.cn 解析到 VPS 的地址，如下方式   ngrok.myrdomain.cn ----------&amp;gt; A记录到你的 VPS IP *.ngrok.mydomain.cn ---------">
+    <meta name="description" content="在运营商网络没有分配 公网IP ，可以用在自己的服务器上用 Ngrok 实现内网穿透     需要   有 公网IP 的 VPS  自由解析的 域名       解析域名   把域名 mydomain.cn 解析到 VPS 的地址，如下方式   ngrok.myrdomain.cn ----------&amp;gt; A记录到你的 VPS IP *.ngrok.mydomain.cn ------">
 <meta name="keywords" content="ngrok,skill">
 <meta property="og:type" content="article">
 <meta property="og:title" content="配置服务器">
 <meta property="og:url" content="https://wiki.lovife.cn/_post/技术实践/服务器/Ngrok实现内网穿透/配置服务器.html">
 <meta property="og:site_name" content="lovife&#39;s Wiki">
-<meta property="og:description" content="在运营商网络没有分配 公网IP ，可以用在自己的服务器上用 Ngrok 实现内网穿透     需要   有 公网IP 的 VPS  自由解析的 域名       解析域名   把域名 mydomain.cn 解析到 VPS 的地址，如下方式   ngrok.myrdomain.cn ----------&amp;gt; A记录到你的 VPS IP *.ngrok.mydomain.cn ---------">
+<meta property="og:description" content="在运营商网络没有分配 公网IP ，可以用在自己的服务器上用 Ngrok 实现内网穿透     需要   有 公网IP 的 VPS  自由解析的 域名       解析域名   把域名 mydomain.cn 解析到 VPS 的地址，如下方式   ngrok.myrdomain.cn ----------&amp;gt; A记录到你的 VPS IP *.ngrok.mydomain.cn ------">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-04-04T10:47:31.117Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="配置服务器">
-<meta name="twitter:description" content="在运营商网络没有分配 公网IP ，可以用在自己的服务器上用 Ngrok 实现内网穿透     需要   有 公网IP 的 VPS  自由解析的 域名       解析域名   把域名 mydomain.cn 解析到 VPS 的地址，如下方式   ngrok.myrdomain.cn ----------&amp;gt; A记录到你的 VPS IP *.ngrok.mydomain.cn ---------">
+<meta name="twitter:description" content="在运营商网络没有分配 公网IP ，可以用在自己的服务器上用 Ngrok 实现内网穿透     需要   有 公网IP 的 VPS  自由解析的 域名       解析域名   把域名 mydomain.cn 解析到 VPS 的地址，如下方式   ngrok.myrdomain.cn ----------&amp;gt; A记录到你的 VPS IP *.ngrok.mydomain.cn ------">
     
 
     
@@ -344,8 +344,8 @@
 把域名 <code>mydomain.cn</code> 解析到 <code>VPS</code> 的地址，如下方式
 </p>
 <pre class="example">
-ngrok.myrdomain.cn ----------> A记录到你的 VPS IP
-*.ngrok.mydomain.cn ----------> CNAME到ngrok.uprogrammer.cn
+ngrok.myrdomain.cn ----------&gt; A记录到你的 VPS IP
+*.ngrok.mydomain.cn ----------&gt; CNAME到ngrok.uprogrammer.cn
 </pre>
 </div>
 </div>
@@ -383,7 +383,7 @@ ngrok.myrdomain.cn ----------> A记录到你的 VPS IP
 </ul>
 <div class="org-src-container">
 
-<figure class="highlight"><table><tr><td class="code"><pre><span class="line"> # &#21487;&#20197;&#26681;&#25454;&#33258;&#24049;&#38656;&#35201;&#35843;&#25972;&#36335;&#24452;  &#10;$ echo 'export GOROOT=/usr/local/go' &#38;gt;&#38;gt; /etc/profile&#10;$ echo 'export PATH=$PATH:$GOROOT/bin' &#38;gt;&#38;gt; /etc/profile&#10;$ echo 'export GOPATH=$HOME/go' &#38;gt;&#38;gt; /etc/profile&#10;$ echo 'export GOROOT_BOOTSTRAP=/usr/local/go' &#38;gt;&#38;gt; /etc/profile&#10;$ source /etc/profile</span><br></pre></td></tr></table></figure>
+<figure class="highlight"><table><tr><td class="code"><pre><span class="line"> # &#21487;&#20197;&#26681;&#25454;&#33258;&#24049;&#38656;&#35201;&#35843;&#25972;&#36335;&#24452;  &#10;$ echo &#39;export GOROOT=/usr/local/go&#39; &#38;gt;&#38;gt; /etc/profile&#10;$ echo &#39;export PATH=$PATH:$GOROOT/bin&#39; &#38;gt;&#38;gt; /etc/profile&#10;$ echo &#39;export GOPATH=$HOME/go&#39; &#38;gt;&#38;gt; /etc/profile&#10;$ echo &#39;export GOROOT_BOOTSTRAP=/usr/local/go&#39; &#38;gt;&#38;gt; /etc/profile&#10;$ source /etc/profile</span><br></pre></td></tr></table></figure>
 </div>
 
 <ul class="org-ul">
