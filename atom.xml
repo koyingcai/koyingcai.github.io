@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://wiki.lovife.cn/"/>
-  <updated>2018-04-04T06:41:39.249Z</updated>
+  <updated>2018-04-04T08:28:33.510Z</updated>
   <id>http://wiki.lovife.cn/</id>
   
   <author>
@@ -17,9 +17,44 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>welcome lovife&#39;s Wiki Site</title>
+    <link href="http://wiki.lovife.cn/2018/04/04/index/"/>
+    <id>http://wiki.lovife.cn/2018/04/04/index/</id>
+    <published>2018-04-04T07:12:00.000Z</published>
+    <updated>2018-04-04T08:28:33.510Z</updated>
+    
+    <content type="html"><![CDATA[<p>个人 Wiki 站点</p><p>want to be a active learner, but failed, never stop trying.</p><ol class="org-ol"><li>收集学习材料</li><li>手写笔记</li><li>电子笔记系统 & Wiki & Blog</li></ol><pre class="example">my org/|--agenda: org-agenda file|--inbox: mixed org-mode note|--note: first assimilate|  |--notebook1|  |  |--note1.org|  |  |--note1.publish|  |  | ...|  |  |--note.org|  |  `--note.publish|  | ...|  `--notebook|--wiki: make it my own|--anki: make anki card for anything important or easy to forget`--blog: for share what is worth sharing</pre><p><code>笔记</code> 在于 <code>理解和分类整理</code></p><p><code>Wiki</code> 在于 <code>积累和快速索引</code></p><p><code>Blog</code> 在于 <code>精</code></p>Render by <a href="http://www.gnu.org/software/emacs/" rel="external nofollow noopener noreferrer" target="_blank">Emacs</a> 25.3.1 (<a href="http://orgmode.org" rel="external nofollow noopener noreferrer" target="_blank">Org</a> mode 8.2.10)]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        
+
+&lt;p&gt;
+个人 Wiki 站点
+&lt;/p&gt;
+
+&lt;p&gt;
+want to be a active learner, but failed, never stop trying.
+&lt;/p&gt;
+
+&lt;ol class=&quot;org-ol&quot;&gt;
+&lt;li&gt;收集学习材料
+&lt;/li&gt;
+&lt;li&gt;手写笔记
+&lt;
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>使用 GitHub page 部署我的 Hexo</title>
-    <link href="http://wiki.lovife.cn/2018/04/04/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/%E5%BB%BA%E7%AB%99/Hexo/hexo/"/>
-    <id>http://wiki.lovife.cn/2018/04/04/项目实践/建站/Hexo/hexo/</id>
+    <link href="http://wiki.lovife.cn/2018/04/04/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/%E5%BB%BA%E7%AB%99/Hexo/hexo/"/>
+    <id>http://wiki.lovife.cn/2018/04/04/技术实践/建站/Hexo/hexo/</id>
     <published>2018-04-04T06:40:00.000Z</published>
     <updated>2018-04-04T06:41:39.249Z</updated>
     
@@ -40,11 +75,11 @@ Render by &lt;a href=&quot;http://www.gnu.org/software/emacs
     
     </summary>
     
-      <category term="项目实践" scheme="http://wiki.lovife.cn/categories/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/"/>
+      <category term="技术实践" scheme="http://wiki.lovife.cn/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/"/>
     
-      <category term="建站" scheme="http://wiki.lovife.cn/categories/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/%E5%BB%BA%E7%AB%99/"/>
+      <category term="建站" scheme="http://wiki.lovife.cn/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/%E5%BB%BA%E7%AB%99/"/>
     
-      <category term="Hexo" scheme="http://wiki.lovife.cn/categories/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/%E5%BB%BA%E7%AB%99/Hexo/"/>
+      <category term="Hexo" scheme="http://wiki.lovife.cn/categories/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/%E5%BB%BA%E7%AB%99/Hexo/"/>
     
     
       <category term="hexo" scheme="http://wiki.lovife.cn/tags/hexo/"/>

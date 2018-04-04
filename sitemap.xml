@@ -2,14 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://wiki.lovife.cn/index.html</loc>
+    <loc>http://wiki.lovife.cn/2018/04/04/index/</loc>
     
-    <lastmod>2018-04-04T08:27:34.501Z</lastmod>
+    <lastmod>2018-04-04T08:28:33.510Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://wiki.lovife.cn/2018/04/04/%E9%A1%B9%E7%9B%AE%E5%AE%9E%E8%B7%B5/%E5%BB%BA%E7%AB%99/Hexo/hexo/</loc>
+    <loc>http://wiki.lovife.cn/index.html</loc>
+    
+    <lastmod>2018-04-04T08:28:33.510Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wiki.lovife.cn/2018/04/04/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/%E5%BB%BA%E7%AB%99/Hexo/hexo/</loc>
     
     <lastmod>2018-04-04T06:41:39.249Z</lastmod>
     
