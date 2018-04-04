@@ -2,7 +2,21 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://wiki.lovife.cn/2018/04/04/index/</loc>
+    <loc>http://wiki.lovife.cn/_post/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/%E6%9C%8D%E5%8A%A1%E5%99%A8/Ngrok%20%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%20%E5%92%8C%20%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2.html</loc>
+    
+    <lastmod>2018-04-04T09:20:33.183Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wiki.lovife.cn/_post/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/%E6%9C%8D%E5%8A%A1%E5%99%A8/Ngrok%E5%AE%9E%E7%8E%B0%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/ngrok.html</loc>
+    
+    <lastmod>2018-04-04T09:17:17.472Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://wiki.lovife.cn/_post/index.html</loc>
     
     <lastmod>2018-04-04T08:28:33.510Z</lastmod>
     
@@ -12,13 +26,6 @@
     <loc>http://wiki.lovife.cn/index.html</loc>
     
     <lastmod>2018-04-04T08:28:33.510Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://wiki.lovife.cn/2018/04/04/%E6%8A%80%E6%9C%AF%E5%AE%9E%E8%B7%B5/%E5%BB%BA%E7%AB%99/Hexo/hexo/</loc>
-    
-    <lastmod>2018-04-04T06:41:39.249Z</lastmod>
     
   </url>
   
